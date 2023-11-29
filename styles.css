@@ -1,0 +1,389 @@
+@font-face {
+  font-family: "Outfit";
+  src: url("src/Outfit-VariableFont_wght.ttf") format("truetype");
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  height: 110px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+.header-navigate-buttons-box {
+  display: flex;
+  height: 38px;
+  background-color: #FF6C2D;
+}
+
+.header-navigate-button {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "OutFit";
+  color: #FFFFFF;
+  padding: 9px 40px 9px 40px;
+  gap: 10px;
+  border-radius: 20px 20px 0px 0px;
+  background-color: #000000;
+  border: none;
+  margin-left: 60px;
+}
+
+.header-navigate-button-inactive {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "OutFit";
+  color: #FFFFFF;
+  padding: 9px 40px 9px 40px;
+  gap: 10px;
+  border: none;
+  border-radius: 20px 20px 0px 0px;
+  background-color: #FF6C2D;
+}
+
+.header-bottom-box {
+  height: 71px;
+  display: flex;
+  flex-direction: row;
+  background-color: #181818;
+  align-items: center;
+  padding: 0 6rem;
+}
+
+.header-budss-logo-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header-budss-logo-img-box {
+  height: 29px;
+  width: 29px;
+}
+
+.header-budss-logo-img {
+  height: 29px;
+  width: 29px;
+}
+
+.header-budss-logo-box-text {
+  font-size: 37px;
+  line-height: 17px;
+  font-weight: 600;
+  font-family: "OutFit";
+  color: #FFFFFF;
+}
+
+.header-bottom-button {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "OutFit";
+  border: none;
+  width: 182px;
+  height: 57px;
+  border-radius: 16px;
+  background-color: #954CED;
+  color: #FFFFFF;
+  padding: 16px 30px 16px 30px;
+  gap: 14px;
+  font-family: "OutFit";
+  transition: 0.3s 0s;
+  margin-left: auto;
+}
+.header-bottom-button:hover {
+  background-color: #181818;
+}
+.header-bottom-button:focus {
+  border: 4px solid #BA8BF3;
+}
+.header-bottom-button:disabled {
+  color: #B9B9B9;
+  background-color: #B9B9B9;
+}
+
+.page-section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.first-section {
+  flex: 1 1 auto;
+  padding-top: 110px;
+  display: flex;
+  flex-direction: row;
+  background-color: #181818;
+}
+
+.first-section-left-part {
+  padding: 0 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.first-section-left-part-title {
+  font-size: 96px;
+  line-height: 106%;
+  font-weight: 700;
+  font-family: "OutFit";
+  color: #FFFFFF;
+}
+
+.first-section-left-part-text {
+  font-size: 20px;
+  line-height: 120%;
+  font-weight: 400;
+  font-family: "OutFit";
+  margin-top: 3rem;
+  color: #FFFFFF;
+}
+
+.first-section-left-part-button {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "OutFit";
+  border: none;
+  width: 182px;
+  height: 57px;
+  border-radius: 16px;
+  background-color: #954CED;
+  color: #FFFFFF;
+  padding: 16px 30px 16px 30px;
+  gap: 14px;
+  font-family: "OutFit";
+  transition: 0.3s 0s;
+  margin-top: 3rem;
+}
+.first-section-left-part-button:hover {
+  background-color: #181818;
+}
+.first-section-left-part-button:focus {
+  border: 4px solid #BA8BF3;
+}
+.first-section-left-part-button:disabled {
+  color: #B9B9B9;
+  background-color: #B9B9B9;
+}
+
+.first-section-right-part {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.first-section-right-part-img {
+  height: 529px;
+  width: 595px;
+}
+
+.second-section {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding-top: 110px;
+  background-color: #181818;
+}
+
+.second-section-title {
+  font-size: 96px;
+  line-height: 106%;
+  font-weight: 700;
+  font-family: "OutFit";
+  display: flex;
+  color: #FFFFFF;
+  padding-left: 6rem;
+}
+
+.second-section-text-box {
+  margin-top: 6rem;
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.second-section-text-box-left-section {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+
+.second-section-text-box-left-section-title {
+  font-size: 36px;
+  font-weight: 600;
+  font-family: "OutFit";
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  padding-left: 6rem;
+}
+.second-section-text-box-left-section-title span {
+  position: relative;
+  z-index: 10;
+}
+.second-section-text-box-left-section-title span::before {
+  content: "";
+  position: absolute;
+  border-radius: 16px;
+  width: 350px;
+  height: 100%;
+  left: -10px;
+  z-index: -1;
+  background-color: #954CED;
+  transform: rotate(-2deg);
+}
+
+.second-section-text-box-left-section-img-box {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.second-section-text-box-left-section-img {
+  width: 423px;
+  height: 489px;
+}
+
+/*# sourceMappingURL=styles.css.map */

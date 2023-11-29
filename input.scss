@@ -1,0 +1,328 @@
+@use './varibalse' as varibalse;
+
+// NULL STYLES-----------------------------------------------------
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+// NULL STYLES-----------------------------------------------------
+
+.header {
+    display: flex;
+    flex-direction: column;
+    height: 110px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+.header-navigate-buttons-box {
+    display: flex;
+    height: 38px;
+    background-color: varibalse.$additional01;
+}
+
+.header-navigate-button {
+    @include varibalse.b1-medium-16;
+    color: varibalse.$grayscale07;
+    padding: 9px 40px 9px 40px;
+    gap: 10px;
+    border-radius: 20px 20px 0px 0px;
+    background-color: varibalse.$grayscale00;
+    border: none;
+    margin-left: 60px;
+}
+
+.header-navigate-button-inactive {
+    @include varibalse.b1-medium-16;
+    color: varibalse.$grayscale07;
+    padding: 9px 40px 9px 40px;
+    gap: 10px;
+    border: none;
+    border-radius: 20px 20px 0px 0px;
+    background-color: varibalse.$additional01;
+}
+
+.header-bottom-box {
+    height: 71px;
+    display: flex;
+    flex-direction: row;
+    background-color: varibalse.$grayscale01;
+    align-items: center;
+    padding: 0 varibalse.$default-padding-margin;
+}
+
+.header-budss-logo-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-budss-logo-img-box {
+    height: 29px;
+    width: 29px;
+}
+
+.header-budss-logo-img {
+    height: 29px;
+    width: 29px;
+}
+
+.header-budss-logo-box-text {
+    @include varibalse.t8-SemiBold-37;
+    color: varibalse.$grayscale07;
+}
+
+.header-bottom-button {
+    @include varibalse.primary-button;
+    margin-left: auto;
+}
+
+.page-section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.first-section {
+    flex: 1 1 auto;
+    padding-top: 110px;
+    display: flex;
+    flex-direction: row;
+    background-color: varibalse.$grayscale01;
+}
+
+.first-section-left-part {
+    padding: 0 varibalse.$default-padding-margin;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.first-section-left-part-title {
+    @include varibalse.t2-bold-96;
+    color: varibalse.$grayscale07;
+}
+
+.first-section-left-part-text {
+    @include varibalse.s6-regular-20;
+    margin-top: varibalse.$default-text-padding-margin;
+    color: varibalse.$grayscale07;
+}
+
+.first-section-left-part-button {
+    @include varibalse.primary-button;
+    margin-top: varibalse.$default-text-padding-margin;
+}
+
+.first-section-right-part {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.first-section-right-part-img {
+    height: 529px;
+    width: 595px;
+}
+
+.second-section {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding-top: 110px;
+    background-color: varibalse.$grayscale01
+}
+
+.second-section-title {
+    @include varibalse.t2-bold-96;
+    display: flex;
+    color: varibalse.$grayscale07;
+    padding-left: varibalse.$default-padding-margin;
+}
+
+.second-section-text-box {
+    margin-top: varibalse.$default-padding-margin;
+    display: flex;
+    flex: 1 1 auto
+}
+
+.second-section-text-box-left-section {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto
+}
+
+.second-section-text-box-left-section-title {
+    @include varibalse.s1-semiBold-36;
+    color: varibalse.$grayscale07;
+    display: flex;
+    flex-direction: column;
+    padding-left: varibalse.$default-padding-margin;
+
+    span {
+        position: relative;
+        z-index: 10;
+
+        &::before {
+            content: "";
+            position: absolute;
+            border-radius: 16px;
+            width: 350px;
+            height: 100%;
+            left: -10px;
+            z-index: -1;
+            background-color: varibalse.$primary01;
+            transform: rotate(-2deg);
+        }
+    }
+}
+
+.second-section-text-box-left-section-img-box {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.second-section-text-box-left-section-img {
+    width: 423px;
+    height: 489px;
+}

@@ -1,0 +1,268 @@
+@font-face {
+    font-family: "Outfit";
+    src: url("src/Outfit-VariableFont_wght.ttf") format('truetype');
+}
+
+//TITLE
+
+@mixin t1-bold-128 {
+    font-size: 128px;
+    line-height: 106%;
+    font-weight: 700;
+    font-family: 'OutFit';
+}
+
+@mixin t2-bold-96 {
+    font-size: 96px;
+    line-height: 106%;
+    font-weight: 700;
+    font-family: 'OutFit';
+}
+
+@mixin t3-bold-64 {
+    font-size: 64px;
+    line-height: 106%;
+    font-weight: 700;
+    font-family: 'OutFit';
+}
+
+@mixin t4-bold-48 {
+    font-size: 48px;
+    line-height: 106%;
+    font-weight: 700;
+    font-family: 'OutFit';
+}
+
+@mixin t5-SemiBold-48 {
+    font-size: 128px;
+    font-weight: 600;
+    font-family: 'OutFit';
+}
+
+@mixin t6-bold-40 {
+    font-size: 40px;
+    line-height: 106%;
+    font-weight: 700;
+    font-family: 'OutFit';
+}
+
+@mixin t7-bold-32 {
+    font-size: 32px;
+    line-height: 106%;
+    font-weight: 700;
+    font-family: 'OutFit';
+}
+
+@mixin t8-SemiBold-37 {
+    font-size: 37px;
+    line-height: 17px;
+    font-weight: 600;
+    font-family: 'OutFit';
+}
+
+//SUBTITLE
+
+@mixin s1-semiBold-36 {
+    font-size: 36px;
+    font-weight: 600;
+    font-family: 'OutFit';
+}
+
+@mixin s2-semiBold-24 {
+    font-size: 24px;
+    line-height: 120%;
+    font-weight: 600;
+    font-family: 'OutFit';
+}
+
+@mixin s3-regular-24 {
+    font-size: 24px;
+    line-height: 120%;
+    font-weight: 400;
+    font-family: 'OutFit';
+}
+
+@mixin s4-semiBold-20 {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'OutFit';
+}
+
+@mixin s5-medium-20 {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'OutFit';
+}
+
+@mixin s6-regular-20 {
+    font-size: 20px;
+    line-height: 120%;
+    font-weight: 400;
+    font-family: 'OutFit';
+}
+
+@mixin s7-light-20 {
+    font-size: 20px;
+    line-height: 140%;
+    font-weight: 300;
+    font-family: 'OutFit';
+}
+
+//body 
+
+@mixin b1-medium-16 {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'OutFit';
+}
+
+@mixin b2-regular-16 {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'OutFit';
+}
+
+@mixin b3-medium-14 {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
+    font-family: 'OutFit';
+}
+
+@mixin b4-regular-14 {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    font-family: 'OutFit';
+}
+
+@mixin b5-light-14 {
+    font-size: 14px;
+    line-height: 140%;
+    font-weight: 300;
+    font-family: 'OutFit';
+}
+
+@mixin b6-light-14-underline {
+    font-size: 14px;
+    line-height: 140%;
+    font-weight: 300;
+    font-family: 'OutFit';
+    text-decoration: underline;
+}
+
+@mixin b7-regular-12 {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+    font-family: 'OutFit';
+}
+
+//COLORS
+
+$grayscale00: #000000;
+$grayscale01: #181818;
+$grayscale02: #444444;
+$grayscale03: #B9B9B9;
+$grayscale04: #CFCFCF;
+$grayscale05: #E4E4E4;
+$grayscale06: #F5F5F5;
+$grayscale07: #FFFFFF;
+$grayscale20: #F1F1F1;
+$grayscale30: #A7A7A7;
+
+$primary00: #7B31D4;
+$primary01: #954CED;
+$primary02: #A64CED;
+$primary03: #BA8BF3;
+$primary04: rgba(149, 76, 237, 0.2);
+
+$secondary01: #2FDBBC;
+$secondary02: #FFAA4C;
+$secondary03: #C1DB2F;
+
+$additional01: #FF6C2D;
+$additional02: #EC1211;
+
+//PADDING-MARGIN
+
+$default-padding-margin: 6rem;
+$default-text-padding-margin: 3rem;
+
+//buttons
+
+@mixin primary-button {
+    @include s4-semiBold-20;
+    border: none;
+    width: 182px;
+    height: 57px;
+    border-radius: 16px;
+    background-color: $primary01;
+    color: $grayscale07;
+    padding: 16px 30px 16px 30px;
+    gap: 14px;
+    font-family: 'OutFit';
+
+    transition: 0.3s 0s;
+
+    &:hover {
+        background-color: $grayscale01;
+    }
+
+    &:focus {
+        border: 4px solid $primary03;
+    }
+
+    &:disabled {
+        color: $grayscale03;
+        background-color: $grayscale03;
+    }
+}
+
+@mixin secondary-button {
+    @include s4-semiBold-20;
+    width: 182px;
+    height: 57px;
+    border-radius: 16px;
+    background-color: $grayscale00;
+    border: 2px solid $primary01;
+    color: $grayscale07;
+    padding: 16px 30px 16px 30px;
+    gap: 14px;
+    font-family: 'OutFit';
+
+    &:hover {
+        background-color: $primary04;
+    }
+
+    &:focus {
+        border: 4px inset $primary01;
+    }
+
+    &:disabled {
+        color: $grayscale03;
+        background-color: $grayscale00;
+        border: 2px solid $grayscale00;
+    }
+}
+
+@mixin placeholder-input {
+    border: 1px solid $grayscale20;
+    color: $grayscale00;
+    border-radius: 14px;
+    width: 343px;
+    height: 40px;
+    padding: 10px 16px 10px 16px;
+    gap: 10px;
+    font-family: 'OutFit';
+
+    &:active {
+        color: $grayscale00;
+        border: 1px solid $grayscale30;
+    }
+
+    &:disabled {
+        border: 1px solid $grayscale20;
+        color: $grayscale00;
+    }
+}
