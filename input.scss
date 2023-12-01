@@ -146,7 +146,7 @@ table {
     height: 110px;
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 20;
 }
 
 .header-navigate-buttons-box {
@@ -325,4 +325,435 @@ table {
 .second-section-text-box-left-section-img {
     width: 423px;
     height: 489px;
+}
+
+.second-section-text-box-right-section {
+    display: flex;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 80rem;
+}
+
+.second-section-text-box-right-section-tile {
+    display: flex;
+    flex-direction: column;
+    max-width: 30rem;
+}
+
+.second-section-text-box-right-section-tile-img-box {
+    height: 100px;
+    width: 100px;
+}
+
+.second-section-text-box-right-section-tile-img {
+    height: 100px;
+    width: 100px;
+}
+
+.second-section-text-box-right-section-tile-title {
+    @include varibalse.t4-bold-48;
+    color: varibalse.$grayscale07;
+}
+
+.second-section-text-box-right-section-tile-text {
+    @include varibalse.s3-regular-24;
+    color: varibalse.$grayscale07;
+}
+
+.third-section {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding-top: 110px;
+    background-color: varibalse.$grayscale01;
+    position: relative;
+}
+
+.third-section-animate-text-section {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 0;
+}
+
+.third-section-animate-text-section-top {
+    @include varibalse.t1-bold-128;
+    color: varibalse.$secondary01;
+    margin: varibalse.$default-padding-margin 0;
+    overflow: hidden;
+    max-height: 136px;
+
+    span {
+        color: varibalse.$grayscale01;
+        text-shadow: 0px 0px 3px varibalse.$grayscale02
+    }
+}
+
+.third-section-animate-text-section-middle {
+    @include varibalse.t1-bold-128;
+    color: varibalse.$primary02;
+    margin: varibalse.$default-padding-margin 0;
+    overflow: hidden;
+    max-height: 136px;
+
+    span {
+        color: varibalse.$grayscale01;
+        text-shadow: 0px 0px 3px varibalse.$grayscale02
+    }
+}
+
+.third-section-animate-text-section-bottom {
+    @include varibalse.t1-bold-128;
+    color: varibalse.$secondary02;
+    margin: varibalse.$default-padding-margin 0;
+    overflow: hidden;
+    max-height: 136px;
+
+    span {
+        color: varibalse.$grayscale01;
+        text-shadow: 0px 0px 3px varibalse.$grayscale02
+    }
+}
+
+.third-section-phone {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.third-section-phone-img-box {
+    z-index: 1;
+}
+
+.third-section-phone-img {
+    height: 623px;
+    width: 308px;
+    z-index: 1;
+    transition: 0.3s 0s;
+
+    &:hover {
+        height: 643px;
+        width: 318px;
+    }
+}
+
+.third-section-tile-box {
+    height: 222px;
+    background-color: #954CED;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.third-section-tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.third-section-tile-title {
+    @include varibalse.t3-bold-64;
+    color: varibalse.$grayscale07;
+}
+
+.third-section-tile-text {
+    @include varibalse.s2-semiBold-24;
+    color: varibalse.$grayscale07;
+}
+
+.fourth-section {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding-top: 110px;
+    background-color: varibalse.$grayscale01;
+}
+
+.fourth-section-top-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: varibalse.$default-padding-margin
+}
+
+.fourth-section-top-box-title {
+    @include varibalse.t3-bold-64;
+    color: varibalse.$grayscale07;
+}
+
+.fourth-section-top-box-text {
+    @include varibalse.s1-semiBold-36;
+    color: varibalse.$grayscale07;
+
+    span {
+        position: relative;
+        z-index: 10;
+
+        &::before {
+            content: "";
+            position: absolute;
+            border-radius: 16px;
+            width: 370px;
+            height: 100%;
+            left: -5px;
+            z-index: -1;
+            background-color: varibalse.$primary01;
+            transform: rotate(-2deg);
+        }
+    }
+}
+
+.fourth-section-tile-box {
+    display: flex;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.fourth-section-tile {
+    display: flex;
+    background-color: varibalse.$grayscale07;
+    border-radius: 30px;
+    height: 362px;
+    max-width: 733px;
+    overflow: hidden;
+    margin-left: 1rem;
+}
+
+.fourth-section-tile-text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+}
+
+.fourth-section-tile-text-box-title {
+    @include varibalse.t5-SemiBold-48;
+    color: varibalse.$grayscale00;
+}
+
+.fourth-section-tile-text-box-text {
+    @include varibalse.s6-regular-20;
+    color: varibalse.$grayscale00;
+    margin-top: 1rem;
+}
+
+.fourth-section-tile-img-box {
+    height: 362px;
+    width: 318px;
+}
+
+.fourth-section-tile-img {
+    height: 362px;
+    width: 318px;
+}
+
+.fourth-section-small-tile {
+    display: flex;
+    background-color: varibalse.$grayscale07;
+    border-radius: 30px;
+    height: 362px;
+    max-width: 547px;
+    overflow: hidden;
+    margin-left: 1rem;
+}
+
+.fourth-section-tile-altImg-box {
+    height: 301px;
+    width: 210px;
+}
+
+.fourth-section-tile-altImg {
+    height: 301px;
+    width: 210px;
+}
+
+.fifth-section {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding-top: 110px;
+    background-color: varibalse.$grayscale06;
+}
+
+.fifth-section-top-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 2rem 3rem 2rem;
+    border: 1px solid varibalse.$grayscale04;
+    padding: 7rem 0;
+    border-radius: 60px
+}
+
+.fifth-section-top-box-title {
+    @include varibalse.t3-bold-64;
+    color: varibalse.$grayscale00;
+}
+
+.fifth-section-top-box-button {
+    @include varibalse.primary-button;
+    margin-top: 1rem;
+}
+
+.fifth-section-middle-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem 2rem 3rem 2rem;
+}
+
+.fifth-section-middle-box-text-section {
+    display: flex;
+    flex-direction: column;
+    max-width: 822px
+}
+
+.fifth-section-middle-box-text-section-title {
+    @include varibalse.t2-bold-96;
+    color: varibalse.$grayscale00;
+}
+
+.fifth-section-middle-box-text-section-text {
+    @include varibalse.s6-regular-20;
+    color: varibalse.$grayscale00;
+}
+
+.fifth-section-middle-box-logos {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.fifth-section-middle-box-logo {
+    width: 90px;
+    height: 90px;
+    margin-right: 2rem;
+}
+
+.fifth-section-middle-box-logo-img {
+    width: 90px;
+    height: 90px;
+    transition: 0.3s 0s;
+
+    &:hover {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.fifth-section-bottom-box {
+    display: flex;
+    align-items: center;
+    margin: 3rem 2rem 3rem 2rem;
+    justify-content: space-around;
+}
+
+.fifth-section-bottom-box-logo {
+    height: 60px;
+    margin-right: 1rem;
+}
+
+.fifth-section-bottom-box-logo-img {
+    height: 60px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    height: 188px;
+    background-color: varibalse.$grayscale01;
+    padding: 0 3rem;
+}
+
+.footer-top-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.footer-top-section-budss-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-top-section-budss-logo-img-box {
+    height: 29px;
+    width: 29px;
+}
+
+.footer-top-section-budss-logo-img {
+    height: 29px;
+    width: 29px;
+}
+
+.footer-top-section-budss-logo-text {
+    @include varibalse.t8-SemiBold-37;
+    color: varibalse.$grayscale07;
+}
+
+.footer-top-section-navigate-buttons-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-top-section-navigate-button {
+    @include varibalse.s5-medium-20;
+    color: varibalse.$grayscale07;
+    background-color: varibalse.$grayscale01;
+    border: none;
+    margin-left: 1rem;
+}
+
+.footer-top-section-alternative-buttons-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-top-section-alternative-button {
+    @include varibalse.primary-button;
+}
+
+.footer-top-section-download {
+    height: 57px;
+    margin-left: 1rem;
+}
+
+.footer-top-section-download-img {
+    height: 57px;
+}
+
+.footer-bottom-section {
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-bottom-section-text {
+    @include varibalse.b5-light-14;
+    color: varibalse.$grayscale03;
+}
+
+.footer-bottom-section-links-box {
+    display: flex;
+}
+
+.footer-bottom-section-link {
+    @include varibalse.b5-light-14;
+    color: varibalse.$grayscale03;
+    margin: 0 0.5rem;
 }
