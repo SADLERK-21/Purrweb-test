@@ -139,6 +139,214 @@ table {
   border-spacing: 0;
 }
 
+.contact-dialog-body {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: #FFFFFF;
+  padding: 0.5rem 1rem;
+}
+
+.contact-dialog-close-button-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.contact-dialog-close-button {
+  border: none;
+  height: 26px;
+  width: 26px;
+  background-color: #FFFFFF;
+}
+
+.contact-dialog-close-button-img {
+  height: 26px;
+  width: 26px;
+}
+
+.contact-dialog-input-body {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0;
+}
+
+.contact-dialog-input-required-title {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 500;
+  font-family: "OutFit";
+  color: #000000;
+}
+.contact-dialog-input-required-title::before {
+  content: "*";
+  color: #FF6C2D;
+}
+
+.contact-dialog-input-title {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 500;
+  font-family: "OutFit";
+  color: #000000;
+}
+
+.contact-dialog-input {
+  border: 1px solid #F1F1F1;
+  color: #000000;
+  border-radius: 14px;
+  height: 40px;
+  padding: 10px 16px 10px 16px;
+  gap: 10px;
+  font-family: "OutFit";
+}
+.contact-dialog-input:active {
+  color: #000000;
+  border: 1px solid #A7A7A7;
+}
+.contact-dialog-input:disabled {
+  border: 1px solid #F1F1F1;
+  color: #000000;
+}
+
+.contact-dialog-text {
+  font-size: 14px;
+  line-height: 140%;
+  font-weight: 300;
+  font-family: "OutFit";
+  padding: 0.5rem 0;
+}
+
+.contact-dialog-confirm-button {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "OutFit";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  width: 182px;
+  height: 57px;
+  border-radius: 16px;
+  background-color: #954CED;
+  color: #FFFFFF;
+  padding: 14px 30px 14px 30px;
+  gap: 14px;
+  font-family: "OutFit";
+  transition: 0.3s 0s;
+  padding: 0.5rem 0;
+}
+.contact-dialog-confirm-button:hover {
+  background-color: #181818;
+}
+.contact-dialog-confirm-button:focus {
+  border: 4px solid #BA8BF3;
+}
+.contact-dialog-confirm-button:disabled {
+  color: #444444;
+  background-color: #B9B9B9;
+}
+
+.thanks-dialog-body {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: #FFFFFF;
+  padding: 0.5rem 1rem;
+  justify-content: center;
+  max-width: 30rem;
+}
+
+.thanks-dialog-close-button-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.thanks-dialog-close-button {
+  border: none;
+  height: 26px;
+  width: 26px;
+  background-color: #FFFFFF;
+}
+
+.thanks-dialog-close-button-img {
+  height: 26px;
+  width: 26px;
+}
+
+.thanks-dialog-img-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.thanks-dialog-img {
+  height: 232px;
+  width: 297px;
+}
+
+.thanks-dialog-title {
+  font-size: 36px;
+  font-weight: 600;
+  font-family: "OutFit";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #A64CED;
+  padding: 0.5rem 0;
+}
+
+.thanks-dialog-text {
+  font-size: 24px;
+  line-height: 120%;
+  font-weight: 400;
+  font-family: "OutFit";
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #000000;
+  padding: 0.5rem 0;
+}
+
+.thanks-dialog-button {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "OutFit";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  width: 182px;
+  height: 57px;
+  border-radius: 16px;
+  background-color: #954CED;
+  color: #FFFFFF;
+  padding: 14px 30px 14px 30px;
+  gap: 14px;
+  font-family: "OutFit";
+  transition: 0.3s 0s;
+  padding: 0.5rem 0;
+}
+.thanks-dialog-button:hover {
+  background-color: #181818;
+}
+.thanks-dialog-button:focus {
+  border: 4px solid #BA8BF3;
+}
+.thanks-dialog-button:disabled {
+  color: #444444;
+  background-color: #B9B9B9;
+}
+
+.thanks-dialog-button-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -216,13 +424,17 @@ table {
   font-size: 20px;
   font-weight: 600;
   font-family: "OutFit";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border: none;
   width: 182px;
   height: 57px;
   border-radius: 16px;
   background-color: #954CED;
   color: #FFFFFF;
-  padding: 16px 30px 16px 30px;
+  padding: 14px 30px 14px 30px;
   gap: 14px;
   font-family: "OutFit";
   transition: 0.3s 0s;
@@ -235,7 +447,7 @@ table {
   border: 4px solid #BA8BF3;
 }
 .header-bottom-button:disabled {
-  color: #B9B9B9;
+  color: #444444;
   background-color: #B9B9B9;
 }
 
@@ -283,13 +495,17 @@ table {
   font-size: 20px;
   font-weight: 600;
   font-family: "OutFit";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border: none;
   width: 182px;
   height: 57px;
   border-radius: 16px;
   background-color: #954CED;
   color: #FFFFFF;
-  padding: 16px 30px 16px 30px;
+  padding: 14px 30px 14px 30px;
   gap: 14px;
   font-family: "OutFit";
   transition: 0.3s 0s;
@@ -302,7 +518,7 @@ table {
   border: 4px solid #BA8BF3;
 }
 .first-section-left-part-button:disabled {
-  color: #B9B9B9;
+  color: #444444;
   background-color: #B9B9B9;
 }
 
@@ -690,13 +906,17 @@ table {
   font-size: 20px;
   font-weight: 600;
   font-family: "OutFit";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border: none;
   width: 182px;
   height: 57px;
   border-radius: 16px;
   background-color: #954CED;
   color: #FFFFFF;
-  padding: 16px 30px 16px 30px;
+  padding: 14px 30px 14px 30px;
   gap: 14px;
   font-family: "OutFit";
   transition: 0.3s 0s;
@@ -709,7 +929,7 @@ table {
   border: 4px solid #BA8BF3;
 }
 .fifth-section-top-box-button:disabled {
-  color: #B9B9B9;
+  color: #444444;
   background-color: #B9B9B9;
 }
 
@@ -844,13 +1064,17 @@ table {
   font-size: 20px;
   font-weight: 600;
   font-family: "OutFit";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border: none;
   width: 182px;
   height: 57px;
   border-radius: 16px;
   background-color: #954CED;
   color: #FFFFFF;
-  padding: 16px 30px 16px 30px;
+  padding: 14px 30px 14px 30px;
   gap: 14px;
   font-family: "OutFit";
   transition: 0.3s 0s;
@@ -862,7 +1086,7 @@ table {
   border: 4px solid #BA8BF3;
 }
 .footer-top-section-alternative-button:disabled {
-  color: #B9B9B9;
+  color: #444444;
   background-color: #B9B9B9;
 }
 

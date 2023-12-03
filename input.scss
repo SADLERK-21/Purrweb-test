@@ -140,6 +140,135 @@ table {
 
 // NULL STYLES-----------------------------------------------------
 
+.contact-dialog-body {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: varibalse.$grayscale07;
+    padding: 0.5rem 1rem;
+}
+
+.contact-dialog-close-button-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.contact-dialog-close-button {
+    border: none;
+    height: 26px;
+    width: 26px;
+    background-color: varibalse.$grayscale07;
+}
+
+.contact-dialog-close-button-img {
+    height: 26px;
+    width: 26px;
+}
+
+.contact-dialog-input-body {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 0;
+}
+
+.contact-dialog-input-required-title {
+    @include varibalse.b3-medium-14;
+    color: varibalse.$grayscale00;
+
+    &::before {
+        content: '*';
+        color: varibalse.$additional01;
+    }
+}
+
+.contact-dialog-input-title {
+    @include varibalse.b3-medium-14;
+    color: varibalse.$grayscale00;
+}
+
+.contact-dialog-input {
+    @include varibalse.placeholder-input;
+}
+
+.contact-dialog-text {
+    @include varibalse.b5-light-14;
+    padding: 0.5rem 0;
+}
+
+.contact-dialog-confirm-button {
+    @include varibalse.primary-button;
+    padding: 0.5rem 0;
+}
+
+.thanks-dialog-body {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: varibalse.$grayscale07;
+    padding: 0.5rem 1rem;
+    justify-content: center;
+    max-width: 30rem;
+}
+
+.thanks-dialog-close-button-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.thanks-dialog-close-button {
+    border: none;
+    height: 26px;
+    width: 26px;
+    background-color: varibalse.$grayscale07;
+}
+
+.thanks-dialog-close-button-img {
+    height: 26px;
+    width: 26px;
+}
+
+.thanks-dialog-img-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.thanks-dialog-img {
+    height: 232px;
+    width: 297px;
+}
+
+.thanks-dialog-title {
+    @include varibalse.s1-semiBold-36;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: varibalse.$primary02;
+    padding: 0.5rem 0;
+}
+
+.thanks-dialog-text {
+    @include varibalse.s3-regular-24;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: varibalse.$grayscale00;
+    padding: 0.5rem 0;
+}
+
+.thanks-dialog-button {
+    @include varibalse.primary-button;
+    padding: 0.5rem 0;
+}
+
+.thanks-dialog-button-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .header {
     display: flex;
     flex-direction: column;
