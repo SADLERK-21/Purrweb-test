@@ -7,11 +7,34 @@ const thanksDialog = document.getElementById("thanks-dialog");
 const thanksCloseButton = document.getElementById("thanks-dialog-close-button");
 const thanksConfirmButton = document.getElementById("thanks-dialog-button");
 
+const cookiesDialog = document.getElementById("cookies-dialog");
+const cookiesCloseButton = document.getElementById("cookies-dialog-close-button");
+const cookiesAcceptButton = document.getElementById("cookies-dialog-accept-button");
+const cookiesDeclineButton = document.getElementById("cookies-dialog-decline-button");
+
 const nameInput = document.getElementById("name-input");
 const emailInput = document.getElementById("email-input");
 const phoneInput = document.getElementById("phone-input");
 
 const body = document.querySelector("body");
+
+window.onload = () => {
+    setTimeout(() => {
+        cookiesDialog.showModal();
+    }, 3000);
+}
+
+cookiesCloseButton.addEventListener('click', e => {
+    cookiesDialog.close();
+})
+
+cookiesAcceptButton.addEventListener('click', e => {
+    cookiesDialog.close();;
+})
+
+cookiesDeclineButton.addEventListener('click', e => {
+    cookiesDialog.close();
+})
 
 contactButton.addEventListener('click', e => {
     contactDialog.showModal();

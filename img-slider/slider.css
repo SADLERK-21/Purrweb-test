@@ -1,0 +1,113 @@
+.slider {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: #0d0d0d;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-imgs-body {
+    display: flex;
+    height: 257px;
+    width: 257px;
+    overflow: hidden;
+}
+
+.slider-img-line {
+    display: flex;
+    position: relative;
+    left: 0;
+
+    transition: 0.3s 0s;
+}
+
+.control-dots-box {
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    width: 236px;
+    height: 256px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.control-dot-left {
+    height: 15px;
+    width: 15px;
+    background-color: grey;
+    border-radius: 50%;
+
+    transition: 0.3s 0s;
+}
+
+.control-dot-left:hover {
+    height: 20px;
+    width: 20px;
+}
+
+.control-dot-right {
+    height: 15px;
+    width: 15px;
+    background-color: grey;
+    border-radius: 50%;
+
+    transition: 0.3s 0s;
+}
+
+.control-dot-right:hover {
+    height: 20px;
+    width: 20px;
+}
+
+.control-dot-right {}
+
+.slider-dot-box {
+    display: flex;
+    height: 20px;
+}
+
+.slider-dot {
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.slider-img-box {
+    background-color: white;
+    height: 256px;
+    width: 256px;
+}
+
+.slider-img {
+    height: 256px;
+    width: 256px;
+}
+
+.button-box {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-back {
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: white;
+    background-color: #420101;
+    margin: 0px 10px;
+}
+
+.button-next {
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: white;
+    background-color: #5bca00;
+    margin: 0px 10px;
+}
