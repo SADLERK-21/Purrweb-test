@@ -106,6 +106,7 @@ section {
 
 html {
     height: 100%;
+    font-size: 16px;
 }
 
 body {
@@ -143,7 +144,7 @@ table {
 .contact-dialog-body {
     display: flex;
     flex-direction: column;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     background-color: varibalse.$grayscale07;
     padding: 0.5rem 1rem;
 }
@@ -156,14 +157,14 @@ table {
 
 .contact-dialog-close-button {
     border: none;
-    height: 26px;
-    width: 26px;
+    height: 1.625rem;
+    width: 1.625rem;
     background-color: varibalse.$grayscale07;
 }
 
 .contact-dialog-close-button-img {
-    height: 26px;
-    width: 26px;
+    height: 1.625rem;
+    width: 1.625rem;
 }
 
 .contact-dialog-input-body {
@@ -197,14 +198,14 @@ table {
 }
 
 .contact-dialog-confirm-button {
-    @include varibalse.primary-button;
+    @include varibalse.primary-button(false);
     padding: 0.5rem 0;
 }
 
 .thanks-dialog-body {
     display: flex;
     flex-direction: column;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     background-color: varibalse.$grayscale07;
     padding: 0.5rem 1rem;
     justify-content: center;
@@ -219,14 +220,14 @@ table {
 
 .thanks-dialog-close-button {
     border: none;
-    height: 26px;
-    width: 26px;
+    height: 1.625rem;
+    width: 1.625rem;
     background-color: varibalse.$grayscale07;
 }
 
 .thanks-dialog-close-button-img {
-    height: 26px;
-    width: 26px;
+    height: 1.625rem;
+    width: 1.625rem;
 }
 
 .thanks-dialog-img-box {
@@ -236,8 +237,8 @@ table {
 }
 
 .thanks-dialog-img {
-    height: 232px;
-    width: 297px;
+    height: 14.5rem;
+    width: 18.5rem;
 }
 
 .thanks-dialog-title {
@@ -259,7 +260,7 @@ table {
 }
 
 .thanks-dialog-button {
-    @include varibalse.primary-button;
+    @include varibalse.primary-button(false);
     padding: 0.5rem 0;
 }
 
@@ -272,7 +273,7 @@ table {
 .header {
     display: flex;
     flex-direction: column;
-    height: 110px;
+    height: 6.875rem;
     width: 100%;
     position: fixed;
     z-index: 20;
@@ -280,7 +281,7 @@ table {
 
 .header-navigate-buttons-box {
     display: flex;
-    height: 38px;
+    height: 2.375rem;
     background-color: varibalse.$additional01;
 }
 
@@ -321,13 +322,13 @@ table {
 }
 
 .header-budss-logo-img-box {
-    height: 29px;
-    width: 29px;
+    height: 1.8rem;
+    width: 1.8rem;
 }
 
 .header-budss-logo-img {
-    height: 29px;
-    width: 29px;
+    height: 1.8rem;
+    width: 1.8rem;
 }
 
 .header-budss-logo-box-text {
@@ -336,7 +337,7 @@ table {
 }
 
 .header-bottom-button {
-    @include varibalse.primary-button;
+    @include varibalse.primary-button(true);
     margin-left: auto;
 }
 
@@ -345,13 +346,16 @@ table {
     width: 100%;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+    flex-wrap: wrap;
 }
 
 .first-section {
     flex: 1 1 auto;
-    padding-top: 110px;
+    padding-top: 6.875rem;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     background-color: varibalse.$grayscale01;
 }
 
@@ -375,7 +379,7 @@ table {
 }
 
 .first-section-left-part-button {
-    @include varibalse.primary-button;
+    @include varibalse.primary-button(true);
     margin-top: varibalse.$default-text-padding-margin;
 }
 
@@ -388,15 +392,16 @@ table {
 }
 
 .first-section-right-part-img {
-    height: 529px;
-    width: 595px;
+    height: 33rem;
+    width: 37rem;
 }
 
 .second-section {
     display: flex;
     flex: 1 1 auto;
     flex-direction: column;
-    padding-top: 110px;
+    flex-wrap: wrap;
+    padding-top: 6.875rem;
     background-color: varibalse.$grayscale01
 }
 
@@ -410,6 +415,7 @@ table {
 .second-section-text-box {
     margin-top: varibalse.$default-padding-margin;
     display: flex;
+    flex-wrap: wrap;
     flex: 1 1 auto
 }
 
@@ -425,6 +431,7 @@ table {
     display: flex;
     flex-direction: column;
     padding-left: varibalse.$default-padding-margin;
+    align-items: center;
 
     span {
         position: relative;
@@ -434,9 +441,9 @@ table {
             content: "";
             position: absolute;
             border-radius: 16px;
-            width: 350px;
+            width: 23rem;
             height: 100%;
-            left: -10px;
+            left: -0.7rem;
             z-index: -1;
             background-color: varibalse.$primary01;
             transform: rotate(-2deg);
@@ -452,8 +459,8 @@ table {
 }
 
 .second-section-text-box-left-section-img {
-    width: 423px;
-    height: 489px;
+    width: 26rem;
+    height: 31rem;
 }
 
 .second-section-text-box-right-section {
@@ -471,13 +478,13 @@ table {
 }
 
 .second-section-text-box-right-section-tile-img-box {
-    height: 100px;
-    width: 100px;
+    height: 6.25rem;
+    width: 6.25rem;
 }
 
 .second-section-text-box-right-section-tile-img {
-    height: 100px;
-    width: 100px;
+    height: 6.25rem;
+    width: 6.25rem;
 }
 
 .second-section-text-box-right-section-tile-title {
@@ -494,7 +501,8 @@ table {
     display: flex;
     flex: 1 1 auto;
     flex-direction: column;
-    padding-top: 110px;
+    flex-wrap: wrap;
+    padding-top: 6.875rem;
     background-color: varibalse.$grayscale01;
     position: relative;
 }
@@ -512,7 +520,7 @@ table {
     color: varibalse.$secondary01;
     margin: varibalse.$default-padding-margin 0;
     overflow: hidden;
-    max-height: 136px;
+    max-height: 8.5rem;
 
     span {
         color: varibalse.$grayscale01;
@@ -525,7 +533,7 @@ table {
     color: varibalse.$primary02;
     margin: varibalse.$default-padding-margin 0;
     overflow: hidden;
-    max-height: 136px;
+    max-height: 8.5rem;
 
     span {
         color: varibalse.$grayscale01;
@@ -538,7 +546,7 @@ table {
     color: varibalse.$secondary02;
     margin: varibalse.$default-padding-margin 0;
     overflow: hidden;
-    max-height: 136px;
+    max-height: 8.5rem;
 
     span {
         color: varibalse.$grayscale01;
@@ -559,23 +567,24 @@ table {
 }
 
 .third-section-phone-img {
-    height: 623px;
-    width: 308px;
+    height: 39rem;
+    width: 19rem;
     z-index: 1;
     transition: 0.3s 0s;
 
     &:hover {
-        height: 643px;
-        width: 318px;
+        height: 41rem;
+        width: 20rem;
     }
 }
 
 .third-section-tile-box {
-    height: 222px;
+    height: 14rem;
     background-color: #954CED;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    z-index: 1;
 }
 
 .third-section-tile {
@@ -599,7 +608,8 @@ table {
     display: flex;
     flex: 1 1 auto;
     flex-direction: column;
-    padding-top: 110px;
+    padding-top: 6.875rem;
+    flex-wrap: wrap;
     background-color: varibalse.$grayscale01;
 }
 
@@ -608,6 +618,7 @@ table {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 1rem;
 
     margin-bottom: varibalse.$default-padding-margin
 }
@@ -629,9 +640,9 @@ table {
             content: "";
             position: absolute;
             border-radius: 16px;
-            width: 370px;
+            width: 24rem;
             height: 100%;
-            left: -5px;
+            left: -0.4rem;
             z-index: -1;
             background-color: varibalse.$primary01;
             transform: rotate(-2deg);
@@ -650,9 +661,9 @@ table {
 .fourth-section-tile {
     display: flex;
     background-color: varibalse.$grayscale07;
-    border-radius: 30px;
-    height: 362px;
-    max-width: 733px;
+    border-radius: 2rem;
+    height: 23rem;
+    width: 46rem;
     overflow: hidden;
     margin-left: 1rem;
 }
@@ -676,40 +687,41 @@ table {
 }
 
 .fourth-section-tile-img-box {
-    height: 362px;
-    width: 318px;
+    height: 27rem;
+    width: 20rem;
 }
 
 .fourth-section-tile-img {
-    height: 362px;
-    width: 318px;
+    height: 27rem;
+    width: 20rem;
 }
 
 .fourth-section-small-tile {
     display: flex;
     background-color: varibalse.$grayscale07;
-    border-radius: 30px;
-    height: 362px;
-    max-width: 547px;
+    border-radius: 2rem;
+    height: 23rem;
+    width: 34rem;
     overflow: hidden;
     margin-left: 1rem;
 }
 
 .fourth-section-tile-altImg-box {
-    height: 301px;
-    width: 210px;
+    height: 19rem;
+    width: 13rem;
 }
 
 .fourth-section-tile-altImg {
-    height: 301px;
-    width: 210px;
+    height: 19rem;
+    width: 13rem;
 }
 
 .fifth-section {
     display: flex;
     flex: 1 1 auto;
     flex-direction: column;
-    padding-top: 110px;
+    padding-top: 6.875rem;
+    flex-wrap: wrap;
     background-color: varibalse.$grayscale06;
 }
 
@@ -730,7 +742,7 @@ table {
 }
 
 .fifth-section-top-box-button {
-    @include varibalse.primary-button;
+    @include varibalse.primary-button(false);
     margin-top: 1rem;
 }
 
@@ -744,7 +756,7 @@ table {
 .fifth-section-middle-box-text-section {
     display: flex;
     flex-direction: column;
-    max-width: 822px
+    max-width: 51rem;
 }
 
 .fifth-section-middle-box-text-section-title {
@@ -764,42 +776,44 @@ table {
 }
 
 .fifth-section-middle-box-logo {
-    width: 90px;
-    height: 90px;
+    width: 6rem;
+    height: 6rem;
     margin-right: 2rem;
 }
 
 .fifth-section-middle-box-logo-img {
-    width: 90px;
-    height: 90px;
+    width: 6rem;
+    height: 6rem;
     transition: 0.3s 0s;
 
     &:hover {
-        width: 100px;
-        height: 100px;
+        width: 7rem;
+        height: 7rem;
     }
 }
 
 .fifth-section-bottom-box {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin: 3rem 2rem 3rem 2rem;
     justify-content: space-around;
 }
 
 .fifth-section-bottom-box-logo {
-    height: 60px;
+    height: 3.75rem;
     margin-right: 1rem;
 }
 
 .fifth-section-bottom-box-logo-img {
-    height: 60px;
+    height: 3.75rem;
 }
 
 .footer {
     display: flex;
     flex-direction: column;
-    height: 188px;
+    flex-wrap: wrap;
+    max-height: 11.75rem;
     background-color: varibalse.$grayscale01;
     padding: 0 3rem;
 }
@@ -808,6 +822,7 @@ table {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 1rem;
 }
 
@@ -815,16 +830,17 @@ table {
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .footer-top-section-budss-logo-img-box {
-    height: 29px;
-    width: 29px;
+    height: 1.8rem;
+    width: 1.8rem;
 }
 
 .footer-top-section-budss-logo-img {
-    height: 29px;
-    width: 29px;
+    height: 1.8rem;
+    width: 1.8rem;
 }
 
 .footer-top-section-budss-logo-text {
@@ -836,6 +852,7 @@ table {
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .footer-top-section-navigate-button {
@@ -850,19 +867,20 @@ table {
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .footer-top-section-alternative-button {
-    @include varibalse.primary-button;
+    @include varibalse.primary-button(true);
 }
 
 .footer-top-section-download {
-    height: 57px;
+    height: 3.6rem;
     margin-left: 1rem;
 }
 
 .footer-top-section-download-img {
-    height: 57px;
+    height: 3.6rem;
 }
 
 .footer-bottom-section {
@@ -870,6 +888,7 @@ table {
     flex: 1 1 auto;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer-bottom-section-text {
@@ -885,4 +904,69 @@ table {
     @include varibalse.b5-light-14;
     color: varibalse.$grayscale03;
     margin: 0 0.5rem;
+}
+
+@media (max-width: 1080px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 720px) {
+    html {
+        font-size: 12px;
+    }
+
+    .footer {
+        max-height: none;
+    }
+}
+
+@media (max-width: 540px) {
+    html {
+        font-size: 10px;
+    }
+
+    .second-section-text-box-left-section-img-box {
+        display: none;
+    }
+
+    .fourth-section-tile {
+        width: 34rem;
+        height: 20rem;
+    }
+
+    .fourth-section-small-tile {
+        height: 20rem;
+    }
+
+    .fourth-section-tile-img-box {
+        width: 17rem;
+    }
+
+    .second-section-text-box-right-section {
+        padding: 0;
+        justify-content: center;
+    }
+
+    .second-section-text-box-left-section-title {
+        padding: 0;
+        align-items: center;
+    }
+
+    .second-section-text-box-right-section {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 460px) {
+    html {
+        font-size: 7px;
+    }
+}
+
+@media (max-width: 360px) {
+    html {
+        font-size: 7px;
+    }
 }

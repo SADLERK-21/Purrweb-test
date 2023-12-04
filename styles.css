@@ -107,6 +107,7 @@ section {
 
 html {
   height: 100%;
+  font-size: 16px;
 }
 
 body {
@@ -142,7 +143,7 @@ table {
 .contact-dialog-body {
   display: flex;
   flex-direction: column;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   background-color: #FFFFFF;
   padding: 0.5rem 1rem;
 }
@@ -155,14 +156,14 @@ table {
 
 .contact-dialog-close-button {
   border: none;
-  height: 26px;
-  width: 26px;
+  height: 1.625rem;
+  width: 1.625rem;
   background-color: #FFFFFF;
 }
 
 .contact-dialog-close-button-img {
-  height: 26px;
-  width: 26px;
+  height: 1.625rem;
+  width: 1.625rem;
 }
 
 .contact-dialog-input-body {
@@ -172,7 +173,7 @@ table {
 }
 
 .contact-dialog-input-required-title {
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 22px;
   font-weight: 500;
   font-family: "OutFit";
@@ -184,7 +185,7 @@ table {
 }
 
 .contact-dialog-input-title {
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 22px;
   font-weight: 500;
   font-family: "OutFit";
@@ -192,12 +193,16 @@ table {
 }
 
 .contact-dialog-input {
+  font-size: 0.875rem;
+  line-height: 22px;
+  font-weight: 400;
+  font-family: "OutFit";
   border: 1px solid #F1F1F1;
   color: #000000;
   border-radius: 14px;
-  height: 40px;
-  padding: 10px 16px 10px 16px;
-  gap: 10px;
+  height: 2.5rem;
+  padding: 0.6rem 1rem 0.6rem 1rem;
+  gap: 0.6rem;
   font-family: "OutFit";
 }
 .contact-dialog-input:active {
@@ -210,7 +215,7 @@ table {
 }
 
 .contact-dialog-text {
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 140%;
   font-weight: 300;
   font-family: "OutFit";
@@ -218,7 +223,7 @@ table {
 }
 
 .contact-dialog-confirm-button {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   font-family: "OutFit";
   display: flex;
@@ -226,13 +231,13 @@ table {
   justify-content: center;
   align-items: center;
   border: none;
-  width: 182px;
-  height: 57px;
-  border-radius: 16px;
+  width: 11rem;
+  height: 3.6rem;
+  border-radius: 1rem;
   background-color: #954CED;
   color: #FFFFFF;
-  padding: 14px 30px 14px 30px;
-  gap: 14px;
+  padding: 0.9rem 1.7rem 1rem 0.9rem;
+  gap: 1rem;
   font-family: "OutFit";
   transition: 0.3s 0s;
   padding: 0.5rem 0;
@@ -251,7 +256,7 @@ table {
 .thanks-dialog-body {
   display: flex;
   flex-direction: column;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   background-color: #FFFFFF;
   padding: 0.5rem 1rem;
   justify-content: center;
@@ -266,14 +271,14 @@ table {
 
 .thanks-dialog-close-button {
   border: none;
-  height: 26px;
-  width: 26px;
+  height: 1.625rem;
+  width: 1.625rem;
   background-color: #FFFFFF;
 }
 
 .thanks-dialog-close-button-img {
-  height: 26px;
-  width: 26px;
+  height: 1.625rem;
+  width: 1.625rem;
 }
 
 .thanks-dialog-img-box {
@@ -283,12 +288,12 @@ table {
 }
 
 .thanks-dialog-img {
-  height: 232px;
-  width: 297px;
+  height: 14.5rem;
+  width: 18.5rem;
 }
 
 .thanks-dialog-title {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: 600;
   font-family: "OutFit";
   display: flex;
@@ -299,7 +304,7 @@ table {
 }
 
 .thanks-dialog-text {
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 120%;
   font-weight: 400;
   font-family: "OutFit";
@@ -311,7 +316,7 @@ table {
 }
 
 .thanks-dialog-button {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   font-family: "OutFit";
   display: flex;
@@ -319,13 +324,13 @@ table {
   justify-content: center;
   align-items: center;
   border: none;
-  width: 182px;
-  height: 57px;
-  border-radius: 16px;
+  width: 11rem;
+  height: 3.6rem;
+  border-radius: 1rem;
   background-color: #954CED;
   color: #FFFFFF;
-  padding: 14px 30px 14px 30px;
-  gap: 14px;
+  padding: 0.9rem 1.7rem 1rem 0.9rem;
+  gap: 1rem;
   font-family: "OutFit";
   transition: 0.3s 0s;
   padding: 0.5rem 0;
@@ -350,7 +355,7 @@ table {
 .header {
   display: flex;
   flex-direction: column;
-  height: 110px;
+  height: 6.875rem;
   width: 100%;
   position: fixed;
   z-index: 20;
@@ -358,12 +363,12 @@ table {
 
 .header-navigate-buttons-box {
   display: flex;
-  height: 38px;
+  height: 2.375rem;
   background-color: #FF6C2D;
 }
 
 .header-navigate-button {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   font-family: "OutFit";
   color: #FFFFFF;
@@ -376,7 +381,7 @@ table {
 }
 
 .header-navigate-button-inactive {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   font-family: "OutFit";
   color: #FFFFFF;
@@ -403,17 +408,17 @@ table {
 }
 
 .header-budss-logo-img-box {
-  height: 29px;
-  width: 29px;
+  height: 1.8rem;
+  width: 1.8rem;
 }
 
 .header-budss-logo-img {
-  height: 29px;
-  width: 29px;
+  height: 1.8rem;
+  width: 1.8rem;
 }
 
 .header-budss-logo-box-text {
-  font-size: 37px;
+  font-size: 2.3rem;
   line-height: 17px;
   font-weight: 600;
   font-family: "OutFit";
@@ -421,7 +426,7 @@ table {
 }
 
 .header-bottom-button {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   font-family: "OutFit";
   display: flex;
@@ -429,15 +434,16 @@ table {
   justify-content: center;
   align-items: center;
   border: none;
-  width: 182px;
-  height: 57px;
-  border-radius: 16px;
+  width: 11rem;
+  height: 3.6rem;
+  border-radius: 1rem;
   background-color: #954CED;
   color: #FFFFFF;
-  padding: 14px 30px 14px 30px;
-  gap: 14px;
+  padding: 0.9rem 1.7rem 1rem 0.9rem;
+  gap: 1rem;
   font-family: "OutFit";
   transition: 0.3s 0s;
+  border: 2px solid #954CED;
   margin-left: auto;
 }
 .header-bottom-button:hover {
@@ -456,13 +462,16 @@ table {
   width: 100%;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+  flex-wrap: wrap;
 }
 
 .first-section {
   flex: 1 1 auto;
-  padding-top: 110px;
+  padding-top: 6.875rem;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   background-color: #181818;
 }
 
@@ -475,7 +484,7 @@ table {
 }
 
 .first-section-left-part-title {
-  font-size: 96px;
+  font-size: 6rem;
   line-height: 106%;
   font-weight: 700;
   font-family: "OutFit";
@@ -483,7 +492,7 @@ table {
 }
 
 .first-section-left-part-text {
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 120%;
   font-weight: 400;
   font-family: "OutFit";
@@ -492,7 +501,7 @@ table {
 }
 
 .first-section-left-part-button {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   font-family: "OutFit";
   display: flex;
@@ -500,15 +509,16 @@ table {
   justify-content: center;
   align-items: center;
   border: none;
-  width: 182px;
-  height: 57px;
-  border-radius: 16px;
+  width: 11rem;
+  height: 3.6rem;
+  border-radius: 1rem;
   background-color: #954CED;
   color: #FFFFFF;
-  padding: 14px 30px 14px 30px;
-  gap: 14px;
+  padding: 0.9rem 1.7rem 1rem 0.9rem;
+  gap: 1rem;
   font-family: "OutFit";
   transition: 0.3s 0s;
+  border: 2px solid #954CED;
   margin-top: 3rem;
 }
 .first-section-left-part-button:hover {
@@ -531,20 +541,21 @@ table {
 }
 
 .first-section-right-part-img {
-  height: 529px;
-  width: 595px;
+  height: 33rem;
+  width: 37rem;
 }
 
 .second-section {
   display: flex;
   flex: 1 1 auto;
   flex-direction: column;
-  padding-top: 110px;
+  flex-wrap: wrap;
+  padding-top: 6.875rem;
   background-color: #181818;
 }
 
 .second-section-title {
-  font-size: 96px;
+  font-size: 6rem;
   line-height: 106%;
   font-weight: 700;
   font-family: "OutFit";
@@ -556,6 +567,7 @@ table {
 .second-section-text-box {
   margin-top: 6rem;
   display: flex;
+  flex-wrap: wrap;
   flex: 1 1 auto;
 }
 
@@ -566,13 +578,14 @@ table {
 }
 
 .second-section-text-box-left-section-title {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: 600;
   font-family: "OutFit";
   color: #FFFFFF;
   display: flex;
   flex-direction: column;
   padding-left: 6rem;
+  align-items: center;
 }
 .second-section-text-box-left-section-title span {
   position: relative;
@@ -582,9 +595,9 @@ table {
   content: "";
   position: absolute;
   border-radius: 16px;
-  width: 350px;
+  width: 23rem;
   height: 100%;
-  left: -10px;
+  left: -0.7rem;
   z-index: -1;
   background-color: #954CED;
   transform: rotate(-2deg);
@@ -598,8 +611,8 @@ table {
 }
 
 .second-section-text-box-left-section-img {
-  width: 423px;
-  height: 489px;
+  width: 26rem;
+  height: 31rem;
 }
 
 .second-section-text-box-right-section {
@@ -617,17 +630,17 @@ table {
 }
 
 .second-section-text-box-right-section-tile-img-box {
-  height: 100px;
-  width: 100px;
+  height: 6.25rem;
+  width: 6.25rem;
 }
 
 .second-section-text-box-right-section-tile-img {
-  height: 100px;
-  width: 100px;
+  height: 6.25rem;
+  width: 6.25rem;
 }
 
 .second-section-text-box-right-section-tile-title {
-  font-size: 48px;
+  font-size: 3rem;
   line-height: 106%;
   font-weight: 700;
   font-family: "OutFit";
@@ -635,7 +648,7 @@ table {
 }
 
 .second-section-text-box-right-section-tile-text {
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 120%;
   font-weight: 400;
   font-family: "OutFit";
@@ -646,7 +659,8 @@ table {
   display: flex;
   flex: 1 1 auto;
   flex-direction: column;
-  padding-top: 110px;
+  flex-wrap: wrap;
+  padding-top: 6.875rem;
   background-color: #181818;
   position: relative;
 }
@@ -660,14 +674,14 @@ table {
 }
 
 .third-section-animate-text-section-top {
-  font-size: 128px;
+  font-size: 8rem;
   line-height: 106%;
   font-weight: 700;
   font-family: "OutFit";
   color: #2FDBBC;
   margin: 6rem 0;
   overflow: hidden;
-  max-height: 136px;
+  max-height: 8.5rem;
 }
 .third-section-animate-text-section-top span {
   color: #181818;
@@ -675,14 +689,14 @@ table {
 }
 
 .third-section-animate-text-section-middle {
-  font-size: 128px;
+  font-size: 8rem;
   line-height: 106%;
   font-weight: 700;
   font-family: "OutFit";
   color: #A64CED;
   margin: 6rem 0;
   overflow: hidden;
-  max-height: 136px;
+  max-height: 8.5rem;
 }
 .third-section-animate-text-section-middle span {
   color: #181818;
@@ -690,14 +704,14 @@ table {
 }
 
 .third-section-animate-text-section-bottom {
-  font-size: 128px;
+  font-size: 8rem;
   line-height: 106%;
   font-weight: 700;
   font-family: "OutFit";
   color: #FFAA4C;
   margin: 6rem 0;
   overflow: hidden;
-  max-height: 136px;
+  max-height: 8.5rem;
 }
 .third-section-animate-text-section-bottom span {
   color: #181818;
@@ -717,22 +731,23 @@ table {
 }
 
 .third-section-phone-img {
-  height: 623px;
-  width: 308px;
+  height: 39rem;
+  width: 19rem;
   z-index: 1;
   transition: 0.3s 0s;
 }
 .third-section-phone-img:hover {
-  height: 643px;
-  width: 318px;
+  height: 41rem;
+  width: 20rem;
 }
 
 .third-section-tile-box {
-  height: 222px;
+  height: 14rem;
   background-color: #954CED;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  z-index: 1;
 }
 
 .third-section-tile {
@@ -743,7 +758,7 @@ table {
 }
 
 .third-section-tile-title {
-  font-size: 64px;
+  font-size: 4rem;
   line-height: 106%;
   font-weight: 700;
   font-family: "OutFit";
@@ -751,7 +766,7 @@ table {
 }
 
 .third-section-tile-text {
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 120%;
   font-weight: 600;
   font-family: "OutFit";
@@ -762,7 +777,8 @@ table {
   display: flex;
   flex: 1 1 auto;
   flex-direction: column;
-  padding-top: 110px;
+  padding-top: 6.875rem;
+  flex-wrap: wrap;
   background-color: #181818;
 }
 
@@ -771,11 +787,12 @@ table {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 1rem;
   margin-bottom: 6rem;
 }
 
 .fourth-section-top-box-title {
-  font-size: 64px;
+  font-size: 4rem;
   line-height: 106%;
   font-weight: 700;
   font-family: "OutFit";
@@ -783,7 +800,7 @@ table {
 }
 
 .fourth-section-top-box-text {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: 600;
   font-family: "OutFit";
   color: #FFFFFF;
@@ -796,9 +813,9 @@ table {
   content: "";
   position: absolute;
   border-radius: 16px;
-  width: 370px;
+  width: 24rem;
   height: 100%;
-  left: -5px;
+  left: -0.4rem;
   z-index: -1;
   background-color: #954CED;
   transform: rotate(-2deg);
@@ -815,9 +832,9 @@ table {
 .fourth-section-tile {
   display: flex;
   background-color: #FFFFFF;
-  border-radius: 30px;
-  height: 362px;
-  max-width: 733px;
+  border-radius: 2rem;
+  height: 23rem;
+  width: 46rem;
   overflow: hidden;
   margin-left: 1rem;
 }
@@ -830,14 +847,14 @@ table {
 }
 
 .fourth-section-tile-text-box-title {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 600;
   font-family: "OutFit";
   color: #000000;
 }
 
 .fourth-section-tile-text-box-text {
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 120%;
   font-weight: 400;
   font-family: "OutFit";
@@ -846,40 +863,41 @@ table {
 }
 
 .fourth-section-tile-img-box {
-  height: 362px;
-  width: 318px;
+  height: 27rem;
+  width: 20rem;
 }
 
 .fourth-section-tile-img {
-  height: 362px;
-  width: 318px;
+  height: 27rem;
+  width: 20rem;
 }
 
 .fourth-section-small-tile {
   display: flex;
   background-color: #FFFFFF;
-  border-radius: 30px;
-  height: 362px;
-  max-width: 547px;
+  border-radius: 2rem;
+  height: 23rem;
+  width: 34rem;
   overflow: hidden;
   margin-left: 1rem;
 }
 
 .fourth-section-tile-altImg-box {
-  height: 301px;
-  width: 210px;
+  height: 19rem;
+  width: 13rem;
 }
 
 .fourth-section-tile-altImg {
-  height: 301px;
-  width: 210px;
+  height: 19rem;
+  width: 13rem;
 }
 
 .fifth-section {
   display: flex;
   flex: 1 1 auto;
   flex-direction: column;
-  padding-top: 110px;
+  padding-top: 6.875rem;
+  flex-wrap: wrap;
   background-color: #F5F5F5;
 }
 
@@ -895,7 +913,7 @@ table {
 }
 
 .fifth-section-top-box-title {
-  font-size: 64px;
+  font-size: 4rem;
   line-height: 106%;
   font-weight: 700;
   font-family: "OutFit";
@@ -903,7 +921,7 @@ table {
 }
 
 .fifth-section-top-box-button {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   font-family: "OutFit";
   display: flex;
@@ -911,13 +929,13 @@ table {
   justify-content: center;
   align-items: center;
   border: none;
-  width: 182px;
-  height: 57px;
-  border-radius: 16px;
+  width: 11rem;
+  height: 3.6rem;
+  border-radius: 1rem;
   background-color: #954CED;
   color: #FFFFFF;
-  padding: 14px 30px 14px 30px;
-  gap: 14px;
+  padding: 0.9rem 1.7rem 1rem 0.9rem;
+  gap: 1rem;
   font-family: "OutFit";
   transition: 0.3s 0s;
   margin-top: 1rem;
@@ -943,11 +961,11 @@ table {
 .fifth-section-middle-box-text-section {
   display: flex;
   flex-direction: column;
-  max-width: 822px;
+  max-width: 51rem;
 }
 
 .fifth-section-middle-box-text-section-title {
-  font-size: 96px;
+  font-size: 6rem;
   line-height: 106%;
   font-weight: 700;
   font-family: "OutFit";
@@ -955,7 +973,7 @@ table {
 }
 
 .fifth-section-middle-box-text-section-text {
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 120%;
   font-weight: 400;
   font-family: "OutFit";
@@ -968,41 +986,43 @@ table {
 }
 
 .fifth-section-middle-box-logo {
-  width: 90px;
-  height: 90px;
+  width: 6rem;
+  height: 6rem;
   margin-right: 2rem;
 }
 
 .fifth-section-middle-box-logo-img {
-  width: 90px;
-  height: 90px;
+  width: 6rem;
+  height: 6rem;
   transition: 0.3s 0s;
 }
 .fifth-section-middle-box-logo-img:hover {
-  width: 100px;
-  height: 100px;
+  width: 7rem;
+  height: 7rem;
 }
 
 .fifth-section-bottom-box {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin: 3rem 2rem 3rem 2rem;
   justify-content: space-around;
 }
 
 .fifth-section-bottom-box-logo {
-  height: 60px;
+  height: 3.75rem;
   margin-right: 1rem;
 }
 
 .fifth-section-bottom-box-logo-img {
-  height: 60px;
+  height: 3.75rem;
 }
 
 .footer {
   display: flex;
   flex-direction: column;
-  height: 188px;
+  flex-wrap: wrap;
+  max-height: 11.75rem;
   background-color: #181818;
   padding: 0 3rem;
 }
@@ -1011,6 +1031,7 @@ table {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 1rem;
 }
 
@@ -1018,20 +1039,21 @@ table {
   display: flex;
   flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .footer-top-section-budss-logo-img-box {
-  height: 29px;
-  width: 29px;
+  height: 1.8rem;
+  width: 1.8rem;
 }
 
 .footer-top-section-budss-logo-img {
-  height: 29px;
-  width: 29px;
+  height: 1.8rem;
+  width: 1.8rem;
 }
 
 .footer-top-section-budss-logo-text {
-  font-size: 37px;
+  font-size: 2.3rem;
   line-height: 17px;
   font-weight: 600;
   font-family: "OutFit";
@@ -1042,10 +1064,11 @@ table {
   display: flex;
   flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .footer-top-section-navigate-button {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 500;
   font-family: "OutFit";
   color: #FFFFFF;
@@ -1058,10 +1081,11 @@ table {
   display: flex;
   flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .footer-top-section-alternative-button {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   font-family: "OutFit";
   display: flex;
@@ -1069,15 +1093,16 @@ table {
   justify-content: center;
   align-items: center;
   border: none;
-  width: 182px;
-  height: 57px;
-  border-radius: 16px;
+  width: 11rem;
+  height: 3.6rem;
+  border-radius: 1rem;
   background-color: #954CED;
   color: #FFFFFF;
-  padding: 14px 30px 14px 30px;
-  gap: 14px;
+  padding: 0.9rem 1.7rem 1rem 0.9rem;
+  gap: 1rem;
   font-family: "OutFit";
   transition: 0.3s 0s;
+  border: 2px solid #954CED;
 }
 .footer-top-section-alternative-button:hover {
   background-color: #181818;
@@ -1091,12 +1116,12 @@ table {
 }
 
 .footer-top-section-download {
-  height: 57px;
+  height: 3.6rem;
   margin-left: 1rem;
 }
 
 .footer-top-section-download-img {
-  height: 57px;
+  height: 3.6rem;
 }
 
 .footer-bottom-section {
@@ -1104,10 +1129,11 @@ table {
   flex: 1 1 auto;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .footer-bottom-section-text {
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 140%;
   font-weight: 300;
   font-family: "OutFit";
@@ -1119,12 +1145,65 @@ table {
 }
 
 .footer-bottom-section-link {
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 140%;
   font-weight: 300;
   font-family: "OutFit";
   color: #B9B9B9;
   margin: 0 0.5rem;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 720px) {
+  html {
+    font-size: 12px;
+  }
+  .footer {
+    max-height: none;
+  }
+}
+@media (max-width: 540px) {
+  html {
+    font-size: 10px;
+  }
+  .second-section-text-box-left-section-img-box {
+    display: none;
+  }
+  .fourth-section-tile {
+    width: 34rem;
+    height: 20rem;
+  }
+  .fourth-section-small-tile {
+    height: 20rem;
+  }
+  .fourth-section-tile-img-box {
+    width: 17rem;
+  }
+  .second-section-text-box-right-section {
+    padding: 0;
+    justify-content: center;
+  }
+  .second-section-text-box-left-section-title {
+    padding: 0;
+    align-items: center;
+  }
+  .second-section-text-box-right-section {
+    justify-content: center;
+  }
+}
+@media (max-width: 460px) {
+  html {
+    font-size: 7px;
+  }
+}
+@media (max-width: 360px) {
+  html {
+    font-size: 7px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

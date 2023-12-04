@@ -43,24 +43,28 @@ contactConfirmButton.addEventListener('mouseenter', () => {
 });
 
 function validateForm() {
-    if(nameInput.value == '') {
+    let result = true;
+
+    if (nameInput.value == '') {
         nameInput.style.cssText = 'border: 2px solid red;';
-        return false;
+        result = false;
     }
 
-    if(emailInput.value == '') {
+    if (emailInput.value == '') {
         emailInput.style.cssText = 'border: 2px solid red;';
-        return false;
+        result = false;
     }
 
-    if(phoneInput.value == '') {
+    if (phoneInput.value == '') {
         phoneInput.style.cssText = 'border: 2px solid red;';
-        return false;
+        result = false;
     }
 
-    nameInput.style.cssText = '2px solid $primary01';
-    emailInput.style.cssText = '2px solid $primary01';
-    phoneInput.style.cssText = '2px solid $primary01';
+    if (result) {
+        nameInput.style.cssText = '2px solid $primary01';
+        emailInput.style.cssText = '2px solid $primary01';
+        phoneInput.style.cssText = '2px solid $primary01';
+    }
 
-    return true;
+    return result;
 }

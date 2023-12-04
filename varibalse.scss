@@ -6,55 +6,55 @@
 //TITLE
 
 @mixin t1-bold-128 {
-    font-size: 128px;
+    font-size: 8rem;
     line-height: 106%;
     font-weight: 700;
     font-family: 'OutFit';
 }
 
 @mixin t2-bold-96 {
-    font-size: 96px;
+    font-size: 6rem;
     line-height: 106%;
     font-weight: 700;
     font-family: 'OutFit';
 }
 
 @mixin t3-bold-64 {
-    font-size: 64px;
+    font-size: 4rem;
     line-height: 106%;
     font-weight: 700;
     font-family: 'OutFit';
 }
 
 @mixin t4-bold-48 {
-    font-size: 48px;
+    font-size: 3rem;
     line-height: 106%;
     font-weight: 700;
     font-family: 'OutFit';
 }
 
 @mixin t5-SemiBold-48 {
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 600;
     font-family: 'OutFit';
 }
 
 @mixin t6-bold-40 {
-    font-size: 40px;
+    font-size: 2.5rem;
     line-height: 106%;
     font-weight: 700;
     font-family: 'OutFit';
 }
 
 @mixin t7-bold-32 {
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 106%;
     font-weight: 700;
     font-family: 'OutFit';
 }
 
 @mixin t8-SemiBold-37 {
-    font-size: 37px;
+    font-size: 2.3rem;
     line-height: 17px;
     font-weight: 600;
     font-family: 'OutFit';
@@ -63,46 +63,46 @@
 //SUBTITLE
 
 @mixin s1-semiBold-36 {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: 600;
     font-family: 'OutFit';
 }
 
 @mixin s2-semiBold-24 {
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 120%;
     font-weight: 600;
     font-family: 'OutFit';
 }
 
 @mixin s3-regular-24 {
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 120%;
     font-weight: 400;
     font-family: 'OutFit';
 }
 
 @mixin s4-semiBold-20 {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
     font-family: 'OutFit';
 }
 
 @mixin s5-medium-20 {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
     font-family: 'OutFit';
 }
 
 @mixin s6-regular-20 {
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 120%;
     font-weight: 400;
     font-family: 'OutFit';
 }
 
 @mixin s7-light-20 {
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 140%;
     font-weight: 300;
     font-family: 'OutFit';
@@ -111,40 +111,40 @@
 //body 
 
 @mixin b1-medium-16 {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
     font-family: 'OutFit';
 }
 
 @mixin b2-regular-16 {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     font-family: 'OutFit';
 }
 
 @mixin b3-medium-14 {
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 22px;
     font-weight: 500;
     font-family: 'OutFit';
 }
 
 @mixin b4-regular-14 {
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 22px;
     font-weight: 400;
     font-family: 'OutFit';
 }
 
 @mixin b5-light-14 {
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 140%;
     font-weight: 300;
     font-family: 'OutFit';
 }
 
 @mixin b6-light-14-underline {
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 140%;
     font-weight: 300;
     font-family: 'OutFit';
@@ -152,7 +152,7 @@
 }
 
 @mixin b7-regular-12 {
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 20px;
     font-weight: 400;
     font-family: 'OutFit';
@@ -191,23 +191,27 @@ $default-text-padding-margin: 3rem;
 
 //buttons
 
-@mixin primary-button {
+@mixin primary-button($isDark) {
     @include s4-semiBold-20;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border: none;
-    width: 182px;
-    height: 57px;
-    border-radius: 16px;
+    width: 11rem;
+    height: 3.6rem;
+    border-radius: 1rem;
     background-color: $primary01;
     color: $grayscale07;
-    padding: 14px 30px 14px 30px;
-    gap: 14px;
+    padding: 0.9rem 1.7rem 1rem 0.9rem;
+    gap: 1rem;
     font-family: 'OutFit';
 
     transition: 0.3s 0s;
+
+    @if($isDark) {
+        border: 2px solid $primary01;
+    }
 
     &:hover {
         background-color: $grayscale01;
@@ -223,21 +227,27 @@ $default-text-padding-margin: 3rem;
     }
 }
 
-@mixin secondary-button {
+@mixin secondary-button() {
     @include s4-semiBold-20;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 182px;
-    height: 57px;
+    width: 11rem;
+    height: 3.6rem;
     border-radius: 16px;
     background-color: $grayscale00;
     border: 2px solid $primary01;
     color: $grayscale07;
-    padding: 14px 30px 14px 30px;
-    gap: 14px;
+    padding: 0.9rem 1.7rem 1rem 0.9rem;
+    gap: 1rem;
     font-family: 'OutFit';
+
+    transition: 0.3s 0s;
+
+    @if($isDark) {
+        border: 2px solid $primary01;
+    }
 
     &:hover {
         background-color: $primary04;
@@ -255,12 +265,13 @@ $default-text-padding-margin: 3rem;
 }
 
 @mixin placeholder-input {
+    @include b4-regular-14();
     border: 1px solid $grayscale20;
     color: $grayscale00;
     border-radius: 14px;
-    height: 40px;
-    padding: 10px 16px 10px 16px;
-    gap: 10px;
+    height: 2.5rem;
+    padding: 0.6rem 1rem 0.6rem 1rem;
+    gap: 0.6rem;
     font-family: 'OutFit';
 
     &:active {
